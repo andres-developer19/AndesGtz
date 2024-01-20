@@ -1,7 +1,11 @@
 ---
+import Css from "../icons/Css.astro"
 import GitHub from "../icons/Github.astro"
+import Javascript from "../icons/Javascript.astro"
 import NextJS from "../icons/NextJS.astro"
 import Tailwind from "../icons/Tailwind.astro"
+import Html from "../icons/Html.astro"
+import Wordpress from "../icons/Wordpress.astro"
 import WorldWeb from "../icons/WorldWeb.astro"
 import LinkButton from "../linkButton/LinkButton.astro"
 
@@ -16,6 +20,26 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: Tailwind,
   },
+  JAVASCRIPT: {
+    name: "Javascript",
+    class: "bg-[#FBFF00] text-black",
+    icon: Javascript,
+  },
+  HTML: {
+    name: "HTML5",
+    class: "bg-[#003159] text-white",
+    icon: Html,
+  },
+  CSS: {
+    name: "css3",
+    class: "bg-[#003159] text-white",
+    icon: Css,
+  },
+  WORDPRESS: {
+    name: "Wordpress",
+    class: "bg-[#003159] text-white",
+    icon: Wordpress,
+  }
 }
 const PROJECTS = [
   {
@@ -25,15 +49,15 @@ const PROJECTS = [
     link: "https://svgl.vercel.app/",
     github: "saf",
     image: "./public/projects/project_1.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.WORDPRESS],
   },
   {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
+    title: "Adicta - Proyecto realizado durante el curso de javascript en CoderHouse",
     description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS",
-    link: "https://adventjs.dev",
+      "Proyecto realizado durante el curso de javascript en CoderHouse  ",
+    link: "https://andresguti19fc.github.io/proyectoFinalDeJavascript/",
     image: "./public/projects/adictaJS.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
   },
 ]
 ---
