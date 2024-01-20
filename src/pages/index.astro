@@ -3,6 +3,8 @@ import AboutMe from '../components/aboutMe/AboutMe.astro'
 import AboutMeIcon from '../components/icons/About.astro'
 import Badge from '../components/badge/Badge.astro'
 import CodeIcon from '../components/icons/Code.astro'
+import ContactosIcon from '../components/icons/Contactos.astro'
+import Contact from '../components/contactos/Contactos.astro'
 import Experience from '../components/experience/Experience.astro'
 import Layout from '../layouts/Layout.astro'
 import GithubIcon from '../components/icons/Github.astro'
@@ -100,6 +102,13 @@ description="Desarrollador y Programador web"
 				Sobre mi
 			</h2>
 			<AboutMe />
+		</SectionContainer>
+		<SectionContainer id="experiencia" class="py-24" >
+			<h2 class="flex gap-3 items-center text-2xl font-semibold mb-10">
+				<ContactosIcon />
+				Contactos
+			</h2>
+			<Contact />
 		</SectionContainer>
 	</main>
 </Layout>
