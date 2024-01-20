@@ -1,16 +1,18 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Badge from '../components/badge/Badge.astro';
-import SectionContainer from '../components/sectionContainer/SectionContainer.astro';
-import LikedinIcon from '../components/icons/Linkedin.astro'
-import GithubIcon from '../components/icons/Github.astro'
-import YoutubeIcon from '../components/icons/Youtube.astro'
-import MailIcon from '../components/icons/Mail.astro'
-import TrabajosIcon from '../components/icons/Trabajos.astro'
+import AboutMe from '../components/aboutMe/AboutMe.astro'
+import AboutMeIcon from '../components/icons/About.astro'
+import Badge from '../components/badge/Badge.astro'
 import CodeIcon from '../components/icons/Code.astro'
-import SocialPill from '../components/socialPill/SocialPill.astro'
 import Experience from '../components/experience/Experience.astro'
+import GithubIcon from '../components/icons/Github.astro'
+import Layout from '../layouts/Layout.astro'
+import LikedinIcon from '../components/icons/Linkedin.astro'
+import MailIcon from '../components/icons/Mail.astro'
 import Projects from '../components/projects/Projects.astro'
+import SectionContainer from '../components/sectionContainer/SectionContainer.astro'
+import SocialPill from '../components/socialPill/SocialPill.astro'
+import TrabajosIcon from '../components/icons/Trabajos.astro'
+import YoutubeIcon from '../components/icons/Youtube.astro'
 
 ---
 
@@ -91,6 +93,13 @@ description="Desarrollador y Programador web"
 				Proyectos
 			</h2>
 			<Projects />
+		</SectionContainer>
+		<SectionContainer id="aboutMe" >
+			<h2 class="flex gap-3 items-center text-2xl font-semibold mb-6">
+				<AboutMeIcon />
+				Sobre mi
+			</h2>
+			<AboutMe />
 		</SectionContainer>
 	</main>
 </Layout>

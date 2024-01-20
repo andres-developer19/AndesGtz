@@ -1,0 +1,20 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SectionContainer from "../components/sectionContainer/SectionContainer.astro"
+import AboutMe from "../components/aboutMe/AboutMe.astro"
+import AboutMeIcon from "../components/icons/About.astro"
+---
+
+<Layout 
+title="Andres Gutierrez - sobre mi  "
+description="he trabajado... " >
+
+<SectionContainer id="aboutMe" >
+    <h2 class="flex gap-3 items-center text-2xl font-semibold mb-6">
+        <AboutMeIcon />
+        Sobre mi
+    </h2>
+    <AboutMe />
+</SectionContainer>
+
+</Layout>
