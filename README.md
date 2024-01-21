@@ -7,6 +7,9 @@
 > [!INFO]
 > informacion basica
 
+> [!TIP]
+> informacion basica
+
 > [!WARNING]
 > peligro
 
