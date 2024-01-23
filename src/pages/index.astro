@@ -15,6 +15,8 @@ import MailIcon from '../components/icons/Mail.astro'
 import Projects from '../components/projects/Projects.astro'
 import SectionContainer from '../components/sectionContainer/SectionContainer.astro'
 import TrabajosIcon from '../components/icons/Trabajos.astro'
+import AccordionBox from '../components/accordion/Accordion.astro'
+import Popup from '../components/popup/Popup.astro'
 
 ---
 
@@ -23,10 +25,12 @@ title="Portfolio - Andres GTZ | Desarrollador y Programador web"
 description="Desarrollador y Programador web"
 >
 	<main class="px-4">
-		<SectionContainer id="about" class="flex-column justify-center items-center w-full lg:w-[740px] mx-auto py-44 pb-24">
+		<!-- <Popup id="asd" paragraph="asdqwerty" open="true" /> -->	
+		<SectionContainer id="about" class="flex-column justify-center items-center w-full lg:w-[740px] mx-auto py-32 pb-24">
+
 			<img 
 				class="rounded-full size-12 mb-4" 
-				src="../../../public/foto.png" 
+				src="/foto.png" 
 				alt="foto de perfil">
 			<h1 class="text-white text-2xl md:text-3xl lg:text-5xl font-bold flex justify-start flex-row gap-x-4 pb-4">
 				Hola, soy Andres 
@@ -42,14 +46,13 @@ description="Desarrollador y Programador web"
 				</div>
 			</h1>
 			<h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
-				Desarrollador web con 
+				Desarrollador web  
 				<span class="text-yellow-200/90">
 					+3años de experiencia.
 				</span> 
-				Venezolano, residenciado en Buenos Aires, Argentina
-				con buen manejo para crear paginas web con tecnologias como 
+				soy un profesional venezolano actualmente radicado en Buenos Aires, Argentina. Poseo habilidades sólidas en la creación de páginas web, utilizando tecnologías que incluyen
 				<span class="text-blue-200/90">
-					HTML, css, javascript, Wordpress y mas...
+					HTML, CSS, JavaScript, WordPress, entre otras.
 				</span>
 			</h2>
 				<nav class="flex justify-center md:justify-start gap-4 mt-4 flex-wrap">
@@ -81,11 +84,14 @@ description="Desarrollador y Programador web"
 					Gmail
 					</SocialPill>
 				</nav>
+
+				<!-- <AccordionBox /> -->
+
 		</SectionContainer>
 		<SectionContainer id="experiencia" >
 			<h2 class="flex gap-3 items-center text-2xl font-semibold mb-6">
 				<TrabajosIcon />
-				Experiencia laboral
+				Formacion laboral
 			</h2>
 			<Experience />
 		</SectionContainer>

@@ -46,9 +46,8 @@ const PROJECTS = [
     title: "SVGL - A beautiful library with SVG logos",
     description:
       "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://svgl.vercel.app/",
-    github: "saf",
-    image: "./public/projects/project_1.webp",
+    link: "https://adrianaleal.com/",
+    image: "./projects/project_1.webp",
     tags: [TAGS.WORDPRESS],
   },
   {
@@ -56,10 +55,23 @@ const PROJECTS = [
     description:
       "Proyecto realizado durante el curso de javascript en CoderHouse  ",
     link: "https://andresguti19fc.github.io/proyectoFinalDeJavascript/",
-    image: "./public/projects/adictaJS.webp",
+    github: "https://github.com/andresguti19fc/proyectoFinalDeJavascript",
+    image: "./projects/adictaJS.webp",
     tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
   },
+  {
+    title: "Criptomoon - Criptomonedas, el dinero del mañana",
+    description:
+      "Proyecto realizado durante el curso de desarrollo web en CoderHouse, donde aplique tecnicas como box model, flexbox, grid entre otras y se basa en la plataforma de estudios de criptomonedas dirigido por un amigo.",
+    link: "https://proyecto-final-lac-one.vercel.app/",
+    github: "https://github.com/andresguti19fc/proyecto-final",
+    image: "./projects/criptomoon.webp",
+    tags: [TAGS.HTML, TAGS.CSS],
+  }
 ]
+PROJECTS.map(({tags}) => (
+  console.log(tags)
+))
 ---
 
 <section class="flex flex-col gap-y-16">

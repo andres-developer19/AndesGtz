@@ -3,6 +3,7 @@ import AboutMe from "../components/aboutMe/AboutMe.astro"
 import AboutMeIcon from "../components/icons/About.astro"
 import Layout from "../layouts/Layout.astro";
 import SectionContainer from "../components/sectionContainer/SectionContainer.astro"
+import CarouselLogos from "../components/carouselLogos/CarouselLogos.astro";
 ---
 
 <Layout 
@@ -15,6 +16,10 @@ description="he trabajado... " >
         Sobre mi
     </h2>
     <AboutMe />
+</SectionContainer>
+
+<SectionContainer class="pb-12 pt-12" >
+    <CarouselLogos />
 </SectionContainer>
 
 </Layout>

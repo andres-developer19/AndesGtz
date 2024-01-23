@@ -1,0 +1,135 @@
+--- 
+import AstroIcon from '../icons/Astro.astro';
+import Css from '../icons/Css.astro';
+import Github from '../icons/Github.astro';
+import Html from '../icons/Html.astro';
+import Javascript from '../icons/Javascript.astro';
+import NextJS from '../icons/NextJS.astro';
+import React from '../icons/React.astro';
+import Tailwind from '../icons/Tailwind.astro';
+import Vue from '../icons/Vue.astro';
+import Wordpress from '../icons/Wordpress.astro';
+import Hubspot from '../icons/Hubspot.astro';
+import Swiper from 'swiper';
+
+
+
+
+
+
+const LOGOS = {
+  NEXT: {
+    name: "Next.js",
+    class: "bg-black text-white",
+    icon: NextJS,
+  },
+  TAILWIND: {
+    name: "Tailwind CSS",
+    class: "bg-[#003159] text-white",
+    icon: Tailwind,
+  },
+  JAVASCRIPT: {
+    name: "Javascript",
+    class: "bg-[#FBFF00] text-black",
+    icon: Javascript,
+  },
+  HTML: {
+    name: "HTML5",
+    class: "bg-[#003159] text-white",
+    icon: Html,
+  },
+  CSS: {
+    name: "css3",
+    class: "bg-[#003159] text-white",
+    icon: Css,
+  },
+  WORDPRESS: {
+    name: "Wordpress",
+    class: "bg-[#003159] text-white",
+    icon: Wordpress,
+  }
+}
+
+const ITEMS = [
+  {
+    logo: Css
+  },
+  {
+    logo: Html
+  },
+  {
+    logo: Javascript
+  },
+  {
+    logo: Wordpress
+  },
+  {
+    logo: Tailwind
+  },
+  {
+    logo: React
+  },
+  {
+    logo: Vue
+  },
+  {
+    logo: AstroIcon
+  },
+  {
+    logo: Github
+  },
+  {
+    logo: Hubspot
+  }
+]
+
+console.log(ITEMS.map(logo => (
+  console.log(logo.logo)
+)))
+/*  */
+
+---
+
+
+<!--     <div class="swiper carousel flex justify-center">
+      
+        <CarouselItems >
+          <Html class="size-20 text-white" />    
+          <Css class="size-20 text-white" />    
+          <Javascript class="size-20 text-white" />    
+          <React class="size-20 text-white" />    
+          <Vue class="size-20 text-white" />    
+          <AstroIcon class="size-20 text-white" />    
+          <NextJS class="size-20 text-white" />    
+          <Github class="size-20 text-white" />    
+        </CarouselItems>
+    </div> -->
+
+
+
+    
+
+<div id="controls-carousel" class="relative w-full" data-carousel="static">
+  <!-- Carousel wrapper -->
+  <div class="flex justify-center items-center gap-12">
+    {
+      ITEMS.map(item => (
+        
+          <item.logo class="size-40 lg:size-50" />
+        
+      ))
+    }
+  </div>
+</div>
+
+  
+
+
+  <style >
+
+
+
+  </style>
+
+
+

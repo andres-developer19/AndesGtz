@@ -1,37 +1,56 @@
 ---
 import ExperienceItem from "./ExperienceItem.astro"
 
-const EXPERIENCIE = [
+const EXPERIENCE = [
   {
     date: "Actualmente...",
-    title: "Desarrollador Web",
+    title: "Desarrollador Web - Happy Agencies",
     description:
-      "Actualmente soy desarrollador web en la empresa Happy Agencies, responsable de implementar y solucionar las paginas web con el diseño aprobado, mayormente las paginas web son desarrolladas con WordPress y HubSpot",
-    link: "https://twitch.tv/midudev",
+      "Actualmente, desempeño el rol de desarrollador web en Happy Agencies, donde he tenido la oportunidad de aplicar y mejorar las habilidades adquiridas en mi formación previa. Mi responsabilidad principal es la implementación y resolución de páginas web, mayormente utilizando tecnologías como WordPress y HubSpot.",
   },
   {
-    date: "Septiembre 2022",
-    title: "Principal Frontend Engineer  − Adevinta Spain",
+    date: "Junio 2022",
+    title: "React - Coderhouse",
     description:
-      "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software. Implantación de medidas de integración continua y despliegue con A/B testing en más de 15 equipos.",
+      "Durante el curso, exploré las capacidades de este potente framework para construir interfaces de usuario dinámicas y eficientes. Además, amplié mi perspectiva al realizar un curso adicional en Vue.js",
+    link: "https://www.coderhouse.com/certificados/62d0ee65b6cc810019af3bc9?lang=es"
   },
+  {
+    date: "Mayo 2022",
+    title: "Javascript - Coderhouse",
+    description:
+      "Durante la pandemia, decidí aprovechar el tiempo y retomé mis estudios en informática. Esta decisión me permitió profundizar en la rama del desarrollo web",
+    link: "https://www.coderhouse.com/certificados/628e54bdc46dd20019809d27?lang=es"
+    },
+  {
+    date: "Marzo 2022",
+    title: "Desarrollo Web - Coderhouse",
+    description:
+      "He adquirido habilidades sólidas en desarrollo web. Aprendí a manejar HTML y exploré sus conceptos fundamentales, como el modelo de caja, flexbox, grid y también utilicé preprocesadores como SASS para optimizar mi flujo de trabajo en CSS. Estas herramientas me han proporcionado una base robusta para crear sitios web eficientes y visualmente atractivos.",
+    link: "https://www.coderhouse.com/certificados/623dc8bce37bc0001ae97155?lang=es"
+  },
+    {
+    date: "Julio 2020",
+    title: "FreeCodeCamp",
+    description:
+      "Durante la pandemia, decidí aprovechar el tiempo y retomé mis estudios en informática. Esta decisión me permitió profundizar en la rama del desarrollo web",
+    link: "https://freecodecamp.org/espanol/certification/andres19_fc/javascript-algorithms-and-data-structures"
+  },
+  {
+    date: "Julio 2013",
+    title: "Tsu en informatica",
+    description:
+      "Obtuve mi título de Técnico Superior Universitario (TSU) en Informática, lo que me proporcionó una sólida formación en las áreas clave de la tecnología y la informática.",
+  }
 ]
 ---
 
-<ol class="relative border-s border-gray-200 dark:border-gray-700">                  
-    <li class="mb-10 ms-4">
-        
-    </li>
-    <li class="mb-10 ms-4">
-        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">March 2022</time>
-        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Marketing UI design in Figma</h3>
-        <p class="text-base font-normal text-gray-500 dark:text-gray-400">All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.</p>
-    </li>
-    <li class="ms-4">
-        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">April 2022</time>
-        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">E-Commerce UI code in Tailwind CSS</h3>
-        <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements built on top of Tailwind CSS.</p>
-    </li>
+<ol class="relative border-s border-gray-200 dark:border-gray-700"> 
+{
+    EXPERIENCE.map(experience => (
+  <li class="mb-10 ms-4">
+    <ExperienceItem {...experience} />
+  </li>
+  )) 
+}            
 </ol>
