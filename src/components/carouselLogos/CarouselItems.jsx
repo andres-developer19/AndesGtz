@@ -1,6 +1,4 @@
----
-import Swiper from 'swiper';
-import 'swiper/css';
+/* 
 import AstroIcon from '../icons/Astro.astro';
 import Css from '../icons/Css.astro';
 import Github from '../icons/Github.astro';
@@ -11,25 +9,21 @@ import React from '../icons/React.astro';
 import Tailwind from '../icons/Tailwind.astro';
 import Vue from '../icons/Vue.astro';
 import Wordpress from '../icons/Wordpress.astro';
+import react from '@astrojs/react';
 
-/* const swiper = new Swiper('.swiper', {
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+
   
-  direction: 'vertical',
-  loop: true,
 
-  slidesPerView: 'auto'
-
-}); */  
-
-const { logo } = Astro.props
----
+export default function MySwiper() {
 
 
-<div class="hidden duration-700 ease-in-out" data-carousel-item>
-  <slot />
-</div>
+  return (
+    <Swiper>
+      <SwiperSlide>Slide 1</SwiperSlide>
+      <SwiperSlide>Slide 2</SwiperSlide>
+    </Swiper>
+  );
+} */
 
- 
-<!-- <div class="swiper-slide carouselItem flex gap-16">
-  <slot/>
-</div> -->

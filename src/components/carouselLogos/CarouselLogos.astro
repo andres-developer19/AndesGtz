@@ -10,7 +10,8 @@ import Tailwind from '../icons/Tailwind.astro';
 import Vue from '../icons/Vue.astro';
 import Wordpress from '../icons/Wordpress.astro';
 import Hubspot from '../icons/Hubspot.astro';
-import Swiper from 'swiper';
+import Swiper from 
+
 
 
 
@@ -82,54 +83,42 @@ const ITEMS = [
     logo: Hubspot
   }
 ]
-
-console.log(ITEMS.map(logo => (
-  console.log(logo.logo)
-)))
-/*  */
-
 ---
 
-
-<!--     <div class="swiper carousel flex justify-center">
-      
-        <CarouselItems >
-          <Html class="size-20 text-white" />    
-          <Css class="size-20 text-white" />    
-          <Javascript class="size-20 text-white" />    
-          <React class="size-20 text-white" />    
-          <Vue class="size-20 text-white" />    
-          <AstroIcon class="size-20 text-white" />    
-          <NextJS class="size-20 text-white" />    
-          <Github class="size-20 text-white" />    
-        </CarouselItems>
-    </div> -->
-
-
-
-    
-
-<div id="controls-carousel" class="relative w-full" data-carousel="static">
+<div class="">
+<div id="controls-carousel" class="swiper-wrapper relative w-full" data-carousel="static">
   <!-- Carousel wrapper -->
   <div class="flex justify-center items-center gap-12">
+    <!-- <CarouselItems logo /> -->
+    <Swiper
+    spaceBetween={50}
+    slidesPerView={3}
+    onSlideChange={() => console.log('slide change')}
+    onSwiper={(swiper) => console.log(swiper)}
+  >
     {
       ITEMS.map(item => (
         
-          <item.logo class="size-40 lg:size-50" />
+          <item.logo class="swiper-slide size-40 lg:size-50" />
         
       ))
-    }
+    } 
+    </Swiper>   
   </div>
 </div>
-
-  
-
-
-  <style >
+</div>
 
 
-
-  </style>
+<script is:inline>new Swiper('.swiper', {
+  virtual: {
+    enabled: true,
+    slidesPerView: 'auto',
+    speed: 400,
+  spaceBetween: 100,
+  },
+})
+swiper.slideNext();
+</script>
 
 
 
